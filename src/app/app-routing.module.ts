@@ -10,7 +10,7 @@ const routes: Routes = [
     component: DemoComponent,
   },
   {
-    path: '/viewchild-basic-usage',
+    path: 'viewchild-basic-usage',
     pathMatch: 'full',
     component: ViewchildBasicUsageComponent,
   }

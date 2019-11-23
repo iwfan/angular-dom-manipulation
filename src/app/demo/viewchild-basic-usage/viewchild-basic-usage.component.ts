@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-viewchild-basic-usage',
-  templateUrl: './viewchild-basic-usage.component.html',
-  styleUrls: ['./viewchild-basic-usage.component.css']
+  template: `<span #span>I am the span element.</span>`
 })
-export class ViewchildBasicUsageComponent implements OnInit {
+export class ViewchildBasicUsageComponent implements AfterViewInit {
 
-  constructor() { }
+  @ViewChild('span', { static: true}) el: ElementRef;
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    console.log(this.el.nativeElement);
   }
 
 }
