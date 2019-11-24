@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { ViewChildBasicUsageComponent } from './demo/view-child-basic-usage/view-child-basic-usage.component';
 import { GetDomElementsWithDiComponent, HighLightDirective } from './demo/get-dom-elements-with-di/get-dom-elements-with-di.component';
+import { GetDomElementsWithTrvComponent } from './demo/get-dom-elements-with-trv/get-dom-elements-with-trv.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { GetDomElementsWithDiComponent, HighLightDirective } from './demo/get-do
     ViewChildBasicUsageComponent,
     GetDomElementsWithDiComponent,
     HighLightDirective,
+    GetDomElementsWithTrvComponent,
   ],
   imports: [
     BrowserModule,
